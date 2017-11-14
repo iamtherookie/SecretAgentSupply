@@ -7,62 +7,83 @@
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <!-- "Logo Container" -->
 
-    <div id="logo" class="flex-container">
-      <img src="resources/images/logo.png" alt="logo">
-      <span>SECRET AGENT SUPPLY INC</span>
-    </div> <!-- closing div - ID header -->
+    <!-- "Header Container" -->
+    <div class="header">
+      <div class="content">
+        <img src="resources/images/logo.png" alt="logo">
+        <span>SECRET AGENT SUPPLY INC</span>
+      </div>
+    </div> <!-- class header -->
 
     <!-- "Main Banner Container" -->
-    <div id="main-banner" class="flex-container">
-      <div class="content">
-        <img src="resources/images/moto.jpeg" alt="motorcycle">
-        <span>NEW ARRIVAL</span>
-        <span>SPORT BIKES AND MOTORCYCLES</span>
+    <div class="main-banner">
+      <div class="container">
+        <div class="headline">
+          <h4>NEW ARRIVAL</h4>
+          <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        </div> <!-- class headline -->
       </div> <!-- "closing div - class content" -->
     </div> <!-- "closing div - ID main-banner" -->
 
-    <!-- "Nav Container" -->
-    <div id="nav">
-      <ul>
+    <!-- "Navigation Container" -->
+    <nav>
+      <ul class="content">
         <li>EyeWear</li>
         <li>Apparel</li>
-        <li> Gadgets</li>
+        <li>Gadgets</li>
         <li>Vehicles</li>
         <li>Classes</li>
         <li>Contact</li>
-      </ul>
-    </div> <!-- "closing div - ID Nav -->
+    </nav>
 
-    <!-- "Product Grid Container" -->
-    <div id="product-grid">
-      <div class="grid-item">
-        <img src="resources/images/pen.png" alt="pen">
-        <span>Exploding Pen</span></div>
-      <div class="grid-item">
-        <img src="resources/images/watch.png" alt="watch">
-        <span>Cellular Watch</span></div>
-      <div class="grid-item">
-        <img src="resources/images/glasses.png" alt="glasses">
-        <span>Thermal Glasses</span></div>
-    </div> <!-- "closing div - ID product grid" -->
+    <!-- "Product Grid  and Location/Hours Container" -->
+    <div class="container">
+      <div class="products">
 
-    <!--Location Container -->
-    <div class="location">
-      <p>Location</p>
-      <p>-47.346436, 84.32354</p>
-    </div> <!-- "Closing div - class location" -->
+        <div class="product">
+          <div class="product-image">
+            <img src="resources/images/pen.png" alt="pen">
+          </div> <!-- class product-image -->
+          <span class="description">Exploding Pens</span>
+        </div> <!-- class product -->
 
-    <!-- "Hours Container" -->
-    <div class="hours">
-      <p>Hours</p>
-      <p>0800 - 1800</p>
-    </div> <!-- "closing div - class hours" -->
+        <div class="product watch">
+          <div class="product-image">
+            <img src="resources/images/watch.png" alt="watch">
+          </div> <!-- class product-image -->
+          <span class="description">Cellular Watch</span>
+        </div> <!-- class product watch -->
+
+        <div class=" product glasses">
+          <div class="product-image">
+            <img src="resources/images/glasses.png">
+          </div> <!-- class product image -->
+          <span class="description">Thermal Glasses</span>
+        </div> <!-- class product glasses -->
+
+      </div> <!-- class products -->
+    </div> <!-- class container -->
+
+    <div class="container">
+      <div class="business-info">
+        <div class="info">
+          <span class="title">Location</span>
+          <span>-47.346436, 84.32354</span>
+        </div> <!-- class title -->
+
+        <div class="info">
+          <span class="title">Hours</span>
+          <span>0800 - 1800</span>
+        </div> <!-- class info -->
+      </div>
+    </div> <!-- "class container" -->
 
     <!-- "Footer Container" -->
     <footer>
-      <span>Copyright Secret Agent Supply Inc.</span>
+      <div class="container">
+        Copyright Secret Agent Supply Inc.</div>
+    </footer>
 
 
   </body>

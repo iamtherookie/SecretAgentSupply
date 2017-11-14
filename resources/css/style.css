@@ -1,7 +1,133 @@
-body {
-  background-color: blue;
+html {
+  font-size: 18px;
+  background-color: white;
 }
 
-span, p, ul {
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+
+}
+
+div {
+  display: block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/*  CSS Content - header */
+.header {
+  background-color: black;
   color: white;
+}
+
+.header img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+/* "CSS Content - banner" */
+.main-banner {
+  height: 25rem;
+  width: 1080px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+}
+
+/* "CSS Content - nav" */
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* "CSS Content - product grid" */
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9rem;
+  border: 4px solid black;
+  padding: 2rem 0;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* "CSS Content - location" */
+#location-section {
+  width: 35%;
+  display: block;
+  border: 1px solid green;
+}
+
+#location-section h6 {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  margin-left: 2rem;
+
+}
+
+#location-section p {
+
+}
+
+/* "CSS Content - hours" */
+#hours-section {
+  width: 35%;
+  display: block;
+  text-align: right;
+  border: 1px solid purple;
+}
+#hours-section h6 {
+  background-color: black;
+  height: 3rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+  text-align: left;
+
+}
+
+#hours-section p {
+  text-align: left;
+}
+
+/* "CSS Content - footer" */
+
+.footer {
+  background-color: black;
+  height: 5rem;
+  text-align: left;
+  color: white;
+  width: 1080px;
+  margin-top: 4rem;
 }
