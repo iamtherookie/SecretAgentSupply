@@ -4,9 +4,8 @@ html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
   font-size: 1rem;
-
+  font-family: Helvetica, sans-serif;
 }
 
 div {
@@ -18,6 +17,11 @@ div {
   margin: 0 auto;
 }
 /*  CSS Content - header */
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: black;
   color: white;
@@ -29,11 +33,35 @@ div {
   margin-right: 1rem;
 }
 
+.header span {
+  margin: 0.66rem 0;
+}
+
 /* "CSS Content - banner" */
 .main-banner {
   height: 25rem;
-  width: 1080px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.headline {
+  background-color: black;
+  color: white;
+  padding: 2rem 3rem;
+  width: 20rem;
+  top: 9rem;
+  position: relative;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
 }
 
 /* "CSS Content - nav" */
@@ -47,6 +75,11 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  margin: auto;
+}
+
+nav li {
+  margin: .75rem 0;
 }
 
 /* "CSS Content - product grid" */
@@ -78,56 +111,29 @@ nav ul {
   background-color: black;
   text-align: center;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
-/* "CSS Content - location" */
-#location-section {
-  width: 35%;
-  display: block;
-  border: 1px solid green;
-}
-
-#location-section h6 {
+/* "CSS Content - location and hours */
+.info .title {
   background-color: black;
+  display: block;
   color: white;
-  font-size: 1rem;
-  height: 3rem;
-  margin-left: 2rem;
-
+  padding: 1rem 2rem;
 }
 
-#location-section p {
-
-}
-
-/* "CSS Content - hours" */
-#hours-section {
+.info {
   width: 35%;
-  display: block;
-  text-align: right;
-  border: 1px solid purple;
-}
-#hours-section h6 {
-  background-color: black;
-  height: 3rem;
-  font-size: 1rem;
-  margin-left: 2rem;
-  text-align: left;
-
-}
-
-#hours-section p {
-  text-align: left;
 }
 
 /* "CSS Content - footer" */
 
-.footer {
+footer {
   background-color: black;
   height: 5rem;
   text-align: left;
   color: white;
-  width: 1080px;
+  width: auto;
   margin-top: 4rem;
+  padding: 4rem 0;
 }
